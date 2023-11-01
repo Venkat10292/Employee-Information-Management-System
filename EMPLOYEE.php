@@ -91,7 +91,7 @@ $conn = mysqli_connect($servername, $username, $password,$dbname);
             }
         if(!$c)
         {
-            $sql="INSERT INTO `employee` (`email`, `employee id`, `first name`, `last name`, `phone`) VALUES ('$email',' $employee_Id', '$first_name', '$last_name', '$phone_no')";
+            $sql="INSERT INTO `employee` (`email`, `employee id`, `first name`, `last name`, `phone`) VALUES ('$email','$employee_Id', '$first_name', '$last_name', '$phone_no')";
             $result = mysqli_query($conn,$sql);
             echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
             <strong>Sucess!</strong> Your Data added sucessfully.
